@@ -1,0 +1,11 @@
+@import "tailwindcss";
+* {
+  font-family:cursive;
+
+}
+
+body  {
+  color: white;
+  background-color: white;
+  
+}
