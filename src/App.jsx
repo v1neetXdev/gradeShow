@@ -15,15 +15,15 @@ const App = () => {
       setAns("A or O")
       setStatus("Oversmart")
     }
-    else if (marks >= 70 && marks < 89) {
+    else if (marks >= 70 && marks <= 89) {
       setAns("B")
       setStatus("Very Good")
     }
-    else if (marks >= 60 && marks < 69) {
+    else if (marks >= 60 && marks <= 69) {
       setAns("C")
       setStatus("Good")
     }
-    else if (marks >= 50 && marks < 59) {
+    else if (marks >= 50 && marks <= 59) {
       setAns("D , FAIL")
       setStatus("Average")
     }
