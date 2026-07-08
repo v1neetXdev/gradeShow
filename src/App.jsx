@@ -36,31 +36,31 @@ const App = () => {
   }
   return (
     <>
-    <div className='w-full bg-pink-700 h-40'>
+    <div className='w-full bg-pink-700 h-40 flex flex-col justify-center items-center '>
       <h1 className='font-bold text-center py-3 px-1 text-5xl'>GradeShow made with ❤️</h1>
     </div>
     
       <form onSubmit={buttonHandler} className='flex flex-wrap flex-col justify-center items-center bg-white text-black m-10 h-full'>
         <h1 className='text-center font-bold text-5xl my-5'>Grade calculator</h1>
         <input
-        className='py-2 px-1 border-3 border-blue-400 outline-blue-800 rounded-2xl font-light m-3 w-[30%] transition-all'
+        className='py-2 px-1 border-3 border-blue-400 outline-blue-800 rounded-2xl font-light m-3 w-full transition-all'
           type="text"
           placeholder="Enter your name"
           value={naam}
           onChange={(e) => setNaam(e.target.value)}
         />
         <input
-        className='py-2 px-1 border-3 border-blue-400 outline-blue-800 rounded-2xl font-light m-3 w-[30%] transition-all'
+        className='py-2 px-1 border-3 border-blue-400 outline-blue-800 rounded-2xl font-light m-3 w-full transition-all'
           type="number"
           placeholder="Enter your marks"
           value={task}
           onChange={(e) => setTask(e.target.value)}
         />
         
-        <div className='flex flex-wrap flex-row justify-center'>
-        <button className='text-white bg-pink-600 p-2 font-bold hover:bg-pink-800 active:scale-95 transition-all rounded-3xl w-30 '>Submit</button>
+        <div className='flex flex-wrap flex-row justify-center w-[50%]'>
+        <button className='text-white bg-pink-600 p-2 font-bold hover:bg-pink-800 active:scale-95 transition-all rounded-3xl w-[100%] py-4 '>Submit</button>
         </div>
-        <div className='border-2 border-pink-800 shadow-2xl hover:scale-101 transition-all mt-3 h-30 bg-pink-200 rounded-2xl flex flex-wrap flex-row justify-evenly w-[40%]'>
+        <div className='border-2 border-pink-800 shadow-2xl hover:scale-101 transition-all mt-3 h-30 bg-pink-200 rounded-2xl flex flex-wrap flex-row justify-evenly w-full'>
             <div className='flex flex-wrap flex-col justify-evenly items-center '>
             <h1 className='font-bold'>Name : {subnaam}</h1>
             <h1 className='font-bold'>Marks : {ans}</h1>
